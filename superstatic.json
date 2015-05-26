@@ -1,0 +1,7 @@
+{
+  "name": "havis",
+  "root": "dist",
+  "cache_control": {
+    "**/*": false
+  }
+}

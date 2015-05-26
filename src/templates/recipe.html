@@ -1,0 +1,30 @@
+<div class="recipe-intro">
+	<h1><%= title %></h1>
+	<h2>Servings to Enjoy: <%= yield %></h2>
+</div>
+<div class="recipe-details clearfix">
+	<div class="ingredients">
+		<h3>Ingredients</h3>
+		<ul>
+			<% _.each(ingredients, function(ingredient) { %>
+				<li><%= ingredient.amount.count %>
+					<% if(ingredient.amount.measurement) { %>
+						<%= " " + ingredient.amount.measurement %>
+					<% } %>
+					<%= " " + ingredient.name %>
+					<% if(ingredient.amount.instruction) { %>
+						<%= "(" + ingredient.amount.instruction + ")" %>
+					<% } %>
+				</li>
+			<% }); %>
+		</ul>
+	</div>
+	<div class="instructions">
+		<h3>Instructions</h3>
+		<ol>
+			<% _.each(steps, function(step) { %>
+				<li><%= step %></li>
+			<% }); %>
+		</ol>
+	</div>
+</div>

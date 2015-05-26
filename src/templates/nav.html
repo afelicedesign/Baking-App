@@ -1,0 +1,21 @@
+<select id="recipe-nav" name="categories">
+	<option value="0">I'm craving...</option>
+	<% 
+	var optGroupOpen = false;
+
+	_.each(items, function(item, i, list) { 
+		if(typeof item === "string"){
+			if(optGroupOpen) { %>
+				</optgroup>
+			<% } %>
+			<optgroup label="<%= item %>">
+			<% optGroupOpen = true;
+		} else { %>
+			<option value="<%= item.id %>"><%= item.title %></option>
+		<% }
+
+		if(list.length == i + 1 && optGroupOpen) { %>
+			</optgroup>
+		<% } 					
+	}); %>
+</select>

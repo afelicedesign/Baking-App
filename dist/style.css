@@ -1,0 +1,139 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline}
+:focus {outline: 0}
+body {line-height: 1}
+ol, ul {list-style: none}
+
+html {
+	font-size: 16px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body, ul, h1, h2, h3, h4, p, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-size: 62.5%; /* 1em = 10px */
+	/*-webkit-font-smoothing: antialiased;*/
+	background-color: #fff7f9;
+	color: #3c3c3c;
+	font-family: "Open Sans";
+	font-weight: 300;
+}
+
+/* Clearfix */
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix {
+	padding-bottom: 0px;
+}
+
+/* Header */
+header {
+	padding: 10px 0;
+	border-bottom: 2px dotted rgba(0,0,0,0.4);
+	background-color: #e6faf8;
+}
+header h1 {
+	font-family: 'Lobster', cursive;
+	font-weight: normal;
+	font-size: 3.5em;
+	line-height: 1.5714286em;
+	text-align: center;
+	color: #ff386a;
+	text-shadow: -1px -1px 1px rgba(255,255,255,1), 2px 2px 0px rgba(38,21,1,0.2);
+}
+
+/* Content */
+.recipe-card {
+	width: 60%;
+	margin: 25px auto 75px;
+	text-align: center;
+}
+.recipe-card p {
+	font-size: 1.6em;
+	line-height: 1.625em;
+	/*width: 80%;*/
+	margin: 0 auto 30px;
+}
+nav {
+	margin-bottom: 45px;
+}
+nav select {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 1.4em;
+	border: 1px solid #bfbfbf !important;
+	background-color: #fcfcfc;
+	height: 26px;
+}
+
+/* Recipes */
+.hidden {
+	display: none;
+}
+.recipe {
+
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 8px;
+	padding: 25px 30px;
+}
+.recipe-intro {
+	margin-bottom: 30px;
+}
+.recipe-intro h1 {
+	font-family: "Lobster", cursive;
+	font-size: 3em;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+	color: #f73667;
+}
+.recipe-intro h2 {
+	/*font-weight: 300;*/
+	font-size: 1.5em;
+	line-height: 1em;
+	text-transform: uppercase;
+	border-top: 1px dotted rgba(0,0,0,0.4);
+	border-bottom: 1px dotted rgba(0,0,0,0.4);
+	padding: 8px 0;
+	color: #4d4d4d;
+}
+.ingredients {
+	float: left;
+	width: 35%;
+}
+.instructions {
+	float: right;
+	width: 60%;
+}
+.recipe-details h3 {
+	font-size: 2.8em;
+	font-family: "Amatic SC";
+	text-align: left;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	color: #00b3b3;
+}
+.ingredients ul li, .instructions ol li {
+	text-align: left;
+	font-size: 1.4em;
+	line-height: 1.4285714em;
+}
+.instructions ol {
+	list-style-type: decimal;
+	padding-left: 20px;
+}
+.ingredients ul li, .instructions ol li {
+	margin-bottom: 10px;
+}
+
